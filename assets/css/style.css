@@ -368,7 +368,8 @@ h3 {
 
 .navbar {
     margin-top: 15px;
-    padding: 0 120px;
+    overflow: hidden;
+    overflow-x: auto;
 }
 
 .logo {
@@ -381,6 +382,8 @@ h3 {
     padding: 0;
     margin: 0;
     list-style: none;
+    white-space: nowrap;
+
 }
 
 .navbar ul li {
@@ -402,6 +405,17 @@ h3 {
 .navbar ul li a:hover {
     background-color: #643a79;  
 }
+
+@media screen and (max-width: 480px) {
+    .navbar ul {
+        float: left;
+    }
+
+    .logo {
+        display:none;
+    }
+}
+
 
 
 /* Hero Section */
@@ -579,7 +593,7 @@ span {
 
 @media screen and (max-width: 480px) {
     .portfolio  img {
-        width: 300px;
+        width: 100%;
         align-items: center;
     }
 }
@@ -701,6 +715,11 @@ span {
     color: white;
 }
 
+@media screen and (max-width: 1000px) {
+    form .col-md-6 {
+        width: 100%;
+    }
+}
 
 /* FOOTER SECTION */
 
@@ -712,8 +731,18 @@ span {
     border-top: 1px solid #8a98c2;
 }
 
+/* .footer {
+    overflow: hidden;
+    overflow-x: auto;
+} */
+
 .footer ul {
+    /* padding: 0; */
     padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .footer ul li {
@@ -733,7 +762,8 @@ footer ul li a:hover {
 }
 
 @media screen and (max-width: 480px) {
-    footer li {
-        margin: 35px;
+    .footer {
+        overflow: hidden;
+        overflow-x: auto;
     }
 }
