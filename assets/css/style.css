@@ -731,13 +731,7 @@ span {
     border-top: 1px solid #8a98c2;
 }
 
-/* .footer {
-    overflow: hidden;
-    overflow-x: auto;
-} */
-
 .footer ul {
-    /* padding: 0; */
     padding: 0;
     margin: 0;
     list-style: none;
